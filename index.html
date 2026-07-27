@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Hunmot Gas | Reliable Natural Gas Solutions</title>
+<meta name="description" content="Hunmot Gas - Powering homes and businesses with reliable, safe, and affordable natural gas solutions." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: { sans: ['Plus Jakarta Sans', 'sans-serif'] },
+        colors: {
+          accent: { DEFAULT: 'hsl(32,95%,55%)', foreground: '#fff' },
+          navy: {
+            deep: 'hsl(220,60%,12%)',
+            DEFAULT: 'hsl(220,60%,20%)',
+            light: 'hsl(220,50%,30%)',
+          },
+        },
+        keyframes: {
+          'fade-in': { from: { opacity:'0', transform:'translateY(20px)' }, to: { opacity:'1', transform:'translateY(0)' } },
+          float: { '0%,100%': { transform:'translateY(0)' }, '50%': { transform:'translateY(-10px)' } },
+          'pulse-glow': {
+            '0%,100%': { boxShadow: '0 0 20px hsl(32 95% 55% / 0.3)' },
+            '50%': { boxShadow: '0 0 40px hsl(32 95% 55% / 0.5)' },
+          },
+        },
+        animation: {
+          'fade-in': 'fade-in 0.6s ease-out forwards',
+          float: 'float 6s ease-in-out infinite',
+          'pulse-glow': 'pulse-glow 2s ease-in-out infinite',
+        },
+      },
+    },
+  }
+</script>
+<style>
+  body { font-family: 'Plus Jakarta Sans', sans-serif; background: hsl(220 20% 97%); color: hsl(220 40% 13%); }
+  .gradient-flame { background: linear-gradient(135deg, hsl(32,95%,55%) 0%, hsl(38,100%,50%) 100%); }
+  .gradient-navy { background: linear-gradient(135deg, hsl(220,60%,12%) 0%, hsl(220,60%,20%) 100%); }
+  .gradient-hero { background: linear-gradient(180deg, hsl(220,60%,12%) 0%, hsl(220,60%,18%) 100%); }
+  .text-gradient-flame {
+    background: linear-gradient(135deg, hsl(32,95%,55%) 0%, hsl(38,100%,50%) 100%);
+    -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+  }
+  .shadow-glow { box-shadow: 0 0 40px hsl(32 95% 55% / 0.3); }
+  .shadow-card { box-shadow: 0 10px 40px -10px hsl(220 60% 12% / 0.15); }
+  .btn { display:inline-flex; align-items:center; justify-content:center; gap:.5rem; font-weight:600; border-radius:.75rem; transition:all .3s; cursor:pointer; }
+  .btn-flame { background: linear-gradient(135deg, hsl(32,95%,55%), hsl(38,100%,50%)); color:#fff; box-shadow: 0 0 40px hsl(32 95% 55% / 0.3); padding:.875rem 2.5rem; font-size:1.125rem; }
+  .btn-flame:hover { transform: scale(1.05); box-shadow: 0 0 50px hsl(32 95% 55% / 0.5); }
+  .btn-outline-light { border:2px solid rgba(255,255,255,.3); color:#fff; padding:.875rem 2.5rem; font-size:1.125rem; background:transparent; }
+  .btn-outline-light:hover { background: rgba(255,255,255,.1); border-color: rgba(255,255,255,.5); }
+  .btn-navy { background: linear-gradient(135deg, hsl(220,60%,12%), hsl(220,60%,20%)); color:#fff; padding:.875rem 2.5rem; font-size:1.125rem; }
+  .btn-navy:hover { transform: scale(1.05); opacity:.95; }
+  /* Hero background (base64 SVG placeholder gas industrial gradient) */
+  .hero-bg {
+    background:
+      radial-gradient(ellipse at 30% 40%, hsl(32,95%,45%,.35), transparent 60%),
+      radial-gradient(ellipse at 80% 70%, hsl(220,80%,25%,.6), transparent 60%),
+      linear-gradient(135deg, hsl(220,60%,10%), hsl(220,60%,18%));
+  }
+</style>
+</head>
+<body class="antialiased">
+
+<!-- HEADER -->
+<header class="absolute top-0 left-0 right-0 z-50">
+  <div class="max-w-7xl mx-auto px-4">
+    <nav class="flex items-center justify-between py-6">
+      <div class="flex items-center gap-3">
+        <div class="p-2 rounded-xl gradient-flame animate-pulse-glow">
+          <!-- flame icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg>
+        </div>
+        <span class="text-2xl font-bold text-white">Hunmot Gas</span>
+      </div>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="#" class="text-white/80 hover:text-accent font-medium transition">Home</a>
+        <a href="#services" class="text-white/80 hover:text-accent font-medium transition">Services</a>
+        <a href="#about" class="text-white/80 hover:text-accent font-medium transition">About</a>
+        <a href="#contact" class="text-white/80 hover:text-accent font-medium transition">Contact</a>
+      </div>
+      <div class="hidden md:flex items-center gap-4">
+        <a href="tel:1-800-GAS-FUEL" class="flex items-center gap-2 text-white/80 hover:text-accent transition font-medium">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          1-800-GAS-FUEL
+        </a>
+        <button class="btn btn-flame" style="padding:.625rem 1.5rem;font-size:.875rem;">Get Quote</button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="relative min-h-screen flex items-center overflow-hidden hero-bg">
+  <div class="absolute inset-0 bg-gradient-to-r from-navy-deep/95 via-navy-deep/70 to-transparent"></div>
+  <div class="absolute inset-0 bg-gradient-to-t from-navy-deep via-transparent to-transparent"></div>
+  <div class="relative max-w-7xl mx-auto px-4 pt-32 pb-20 w-full">
+    <div class="max-w-3xl">
+      <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/20 border border-accent/30 mb-8 animate-fade-in">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        <span class="text-sm font-medium text-accent">Trusted Since 1985</span>
+      </div>
+      <h1 class="text-4xl md:text-5xl lg:text-7xl font-extrabold text-white leading-tight mb-6 animate-fade-in" style="animation-delay:.1s">
+        Powering Your World with <span class="text-gradient-flame">Reliable Energy</span>
+      </h1>
+      <p class="text-lg md:text-xl text-white/70 mb-10 max-w-2xl leading-relaxed animate-fade-in" style="animation-delay:.2s">
+        From residential heating to industrial power, we deliver safe, efficient, and sustainable natural gas solutions tailored to your needs.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 animate-fade-in" style="animation-delay:.3s">
+        <button class="btn btn-flame">Get a Free Quote →</button>
+        <button class="btn btn-outline-light">Explore Services</button>
+      </div>
+      <div class="grid grid-cols-3 gap-8 mt-16 pt-16 border-t border-white/10 animate-fade-in" style="animation-delay:.4s">
+        <div><div class="text-3xl md:text-4xl font-bold text-accent mb-2">40+</div><div class="text-sm md:text-base text-white/60">Years Experience</div></div>
+        <div><div class="text-3xl md:text-4xl font-bold text-accent mb-2">50K+</div><div class="text-sm md:text-base text-white/60">Happy Customers</div></div>
+        <div><div class="text-3xl md:text-4xl font-bold text-accent mb-2">99.9%</div><div class="text-sm md:text-base text-white/60">Uptime Guarantee</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="absolute bottom-10 right-10 hidden lg:block animate-float">
+    <div class="p-4 rounded-2xl bg-white/10 backdrop-blur-lg border border-white/20">
+      <div class="flex items-center gap-3">
+        <div class="p-2 rounded-lg gradient-flame">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+        </div>
+        <div>
+          <div class="text-sm font-semibold text-white">24/7 Emergency</div>
+          <div class="text-xs text-white/60">Always available</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="py-24 bg-[hsl(220,20%,97%)]">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <span class="text-accent font-semibold text-sm uppercase tracking-wider">Our Services</span>
+      <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mt-4 mb-6">Energy Solutions for <span class="text-gradient-flame">Every Need</span></h2>
+      <p class="text-gray-500 text-lg">Whether you're powering a home, business, or industrial facility, we have the expertise and infrastructure to deliver.</p>
+    </div>
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- Residential -->
+      <div class="group bg-white rounded-2xl p-8 shadow-card hover:shadow-glow transition-all duration-500 border border-gray-200 hover:border-accent/30">
+        <div class="inline-flex p-4 rounded-xl gradient-flame mb-6 group-hover:scale-110 transition-transform">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </div>
+        <h3 class="text-2xl font-bold mb-4">Residential</h3>
+        <p class="text-gray-500 mb-6 leading-relaxed">Safe and reliable natural gas for your home. From heating to cooking, we power your daily life with consistent energy supply.</p>
+        <ul class="space-y-3 mb-8">
+          <li class="flex items-center gap-3"><span class="h-1.5 w-1.5 rounded-full bg-accent"></span>Home Heating</li>
+          <li class="flex items-center gap-3"><span class="h-1.5 w-1.5 rounded-full bg-accent"></span>Water Heaters</li>
+          <li class="flex items-center gap-3"><span class="h-1.5 w-1.5 rounded-full bg-accent"></span>Cooking Appliances</li>
+          <li class="flex items-center gap-3"><span class="h-1.5 w-1.5 rounded-full bg-accent"></span>Fireplaces</li>
+        </ul>
+        <a href="#" class="text-accent font-semibold inline-flex items-center gap-1 hover:gap-2 transition-all">Learn More →</a>
+      </div>
+      <!-- Commercial -->
+      <div class="group bg-white rounded-2xl p-8 shadow-card hover:shadow-glow transition-all duration-500 border border-gray-200 hover:border-accent/30">
+        <div class="inline-flex p-4 rounded-xl gradient-flame mb-6 group-hover:scale-110 transition-transform">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/><path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/><path d="M10 18h4"/></svg>
+        </div>
+        <h3 class="text-2xl font-bold mb-4">Commercial</h3>
+        <p class="text-gray-500 mb-6 leading-relaxed">Scalable gas solutions for businesses of all sizes. Reduce costs and improve efficiency with our commercial plans.</p>
+        <ul class="space-y-3 mb-8">
+          <li class="flex items-center gap-3"><span class="h-1.5 w-1.5 rounded-full bg-accent"></span>Office Buildings</li>
+          <li class="flex items-center gap-3"><span class="h-1.5 w-1.5 rounded-full bg-accent"></span>Restaurants</li>
+          <li class="flex items-center gap-3"><span class="h-1.5 w-1.5 rounded-full bg-accent"></span>Hotels</li>
+          <li class="flex items-center gap-3"><span class="h-1.5 w-1.5 rounded-full bg-accent"></span>Retail Spaces</li>
+        </ul>
+        <a href="#" class="text-accent font-semibold inline-flex items-center gap-1 hover:gap-2 transition-all">Learn More →</a>
+      </div>
+      <!-- Industrial -->
+      <div class="group bg-white rounded-2xl p-8 shadow-card hover:shadow-glow transition-all duration-500 border border-gray-200 hover:border-accent/30">
+        <div class="inline-flex p-4 rounded-xl gradient-flame mb-6 group-hover:scale-110 transition-transform">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white"><path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M17 18h1"/><path d="M12 18h1"/><path d="M7 18h1"/></svg>
+        </div>
+        <h3 class="text-2xl font-bold mb-4">Industrial</h3>
+        <p class="text-gray-500 mb-6 leading-relaxed">High-capacity gas infrastructure for manufacturing and industrial operations. Custom solutions for complex needs.</p>
+        <ul class="space-y-3 mb-8">
+          <li class="flex items-center gap-3"><span class="h-1.5 w-1.5 rounded-full bg-accent"></span>Manufacturing</li>
+          <li class="flex items-center gap-3"><span class="h-1.5 w-1.5 rounded-full bg-accent"></span>Power Generation</li>
+          <li class="flex items-center gap-3"><span class="h-1.5 w-1.5 rounded-full bg-accent"></span>Processing Plants</li>
+          <li class="flex items-center gap-3"><span class="h-1.5 w-1.5 rounded-full bg-accent"></span>Warehouses</li>
+        </ul>
+        <a href="#" class="text-accent font-semibold inline-flex items-center gap-1 hover:gap-2 transition-all">Learn More →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BENEFITS -->
+<section id="about" class="py-24 gradient-hero">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <span class="text-accent font-semibold text-sm uppercase tracking-wider">Why Choose Us</span>
+      <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mt-4 mb-6">The Hunmot Gas <span class="text-gradient-flame">Advantage</span></h2>
+      <p class="text-white/70 text-lg">Experience the difference of working with a gas company that puts your needs first.</p>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- benefit template repeated -->
+      <div class="group p-8 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-accent/30 transition-all">
+        <div class="inline-flex p-3 rounded-xl bg-accent/20 mb-6"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <h3 class="text-xl font-bold text-white mb-3">Unmatched Safety</h3>
+        <p class="text-white/60 leading-relaxed">Industry-leading safety protocols and 24/7 monitoring to protect your home and business.</p>
+      </div>
+      <div class="group p-8 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-accent/30 transition-all">
+        <div class="inline-flex p-3 rounded-xl bg-accent/20 mb-6"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+        <h3 class="text-xl font-bold text-white mb-3">24/7 Availability</h3>
+        <p class="text-white/60 leading-relaxed">Round-the-clock emergency support and consistent supply you can always count on.</p>
+      </div>
+      <div class="group p-8 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-accent/30 transition-all">
+        <div class="inline-flex p-3 rounded-xl bg-accent/20 mb-6"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent"><polyline points="22 17 13.5 8.5 8.5 13.5 2 7"/><polyline points="16 17 22 17 22 11"/></svg></div>
+        <h3 class="text-xl font-bold text-white mb-3">Competitive Pricing</h3>
+        <p class="text-white/60 leading-relaxed">Transparent pricing with no hidden fees. Save up to 30% compared to alternatives.</p>
+      </div>
+      <div class="group p-8 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-accent/30 transition-all">
+        <div class="inline-flex p-3 rounded-xl bg-accent/20 mb-6"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19.2 2.96c1.2 6.58.34 9.99-8.2 17.04"/><path d="M2 21c0-3 1.85-5.36 5.08-6"/></svg></div>
+        <h3 class="text-xl font-bold text-white mb-3">Eco-Friendly</h3>
+        <p class="text-white/60 leading-relaxed">Natural gas produces fewer emissions, helping you reduce your carbon footprint.</p>
+      </div>
+      <div class="group p-8 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-accent/30 transition-all">
+        <div class="inline-flex p-3 rounded-xl bg-accent/20 mb-6"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg></div>
+        <h3 class="text-xl font-bold text-white mb-3">Certified Excellence</h3>
+        <p class="text-white/60 leading-relaxed">ISO certified operations with industry awards for quality and reliability.</p>
+      </div>
+      <div class="group p-8 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-accent/30 transition-all">
+        <div class="inline-flex p-3 rounded-xl bg-accent/20 mb-6"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1v-6h3zM3 19a2 2 0 0 0 2 2h1v-6H3z"/></svg></div>
+        <h3 class="text-xl font-bold text-white mb-3">Expert Support</h3>
+        <p class="text-white/60 leading-relaxed">Dedicated account managers and technical support team at your service.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="contact" class="py-24 bg-[hsl(220,20%,97%)]">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="relative overflow-hidden rounded-3xl gradient-flame p-12 md:p-16 lg:p-20">
+      <div class="absolute inset-0 opacity-10">
+        <div class="absolute top-0 left-0 w-96 h-96 bg-white rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
+        <div class="absolute bottom-0 right-0 w-96 h-96 bg-white rounded-full blur-3xl translate-x-1/2 translate-y-1/2"></div>
+      </div>
+      <div class="relative z-10 max-w-3xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">Ready to Power Your Future?</h2>
+        <p class="text-lg md:text-xl text-white/80 mb-10 max-w-2xl mx-auto">Get a personalized quote in minutes. Our energy consultants are ready to help you find the perfect gas solution for your needs.</p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+          <button class="btn btn-navy">Get Your Free Quote →</button>
+          <button class="btn btn-outline-light">📞 Call 1-800-GAS-FUEL</button>
+        </div>
+        <p class="mt-8 text-white/70 text-sm">No commitment required • Free consultation • Response within 24 hours</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-navy-deep text-white">
+  <div class="max-w-7xl mx-auto px-4 py-16">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+      <div class="space-y-6">
+        <div class="flex items-center gap-3">
+          <div class="p-2 rounded-xl gradient-flame">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg>
+          </div>
+          <span class="text-2xl font-bold">Hunmot Gas</span>
+        </div>
+        <p class="text-white/70 leading-relaxed">Powering homes and businesses with reliable, safe, and affordable natural gas solutions since 1985.</p>
+      </div>
+      <div>
+        <h4 class="text-lg font-semibold mb-6">Quick Links</h4>
+        <ul class="space-y-4 text-white/70">
+          <li><a href="#" class="hover:text-accent transition">About Us</a></li>
+          <li><a href="#" class="hover:text-accent transition">Our Services</a></li>
+          <li><a href="#" class="hover:text-accent transition">Safety Guidelines</a></li>
+          <li><a href="#" class="hover:text-accent transition">Pricing</a></li>
+          <li><a href="#" class="hover:text-accent transition">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-lg font-semibold mb-6">Services</h4>
+        <ul class="space-y-4 text-white/70">
+          <li><a href="#" class="hover:text-accent transition">Residential Gas</a></li>
+          <li><a href="#" class="hover:text-accent transition">Commercial Supply</a></li>
+          <li><a href="#" class="hover:text-accent transition">Industrial Solutions</a></li>
+          <li><a href="#" class="hover:text-accent transition">Emergency Services</a></li>
+          <li><a href="#" class="hover:text-accent transition">Maintenance</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-lg font-semibold mb-6">Contact Us</h4>
+        <ul class="space-y-4 text-white/70">
+          <li>📞 1-800-GAS-FUEL</li>
+          <li>✉️ info@hunmotgas.com</li>
+          <li>📍 123 Energy Boulevard, Houston, TX 77001</li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-white/10 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+      <p class="text-white/50 text-sm">© 2026 Hunmot Gas. All rights reserved.</p>
+      <div class="flex gap-6 text-sm text-white/50">
+        <a href="#" class="hover:text-accent">Privacy Policy</a>
+        <a href="#" class="hover:text-accent">Terms of Service</a>
+        <a href="#" class="hover:text-accent">Cookie Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
